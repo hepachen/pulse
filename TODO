@@ -5,15 +5,30 @@ msft
 	msft.db 
 		db stats
 		aggregate stats
+			-top downloads
+			-top revenue
 	msftext.db 
 		db stats
 		aggregate stats
+			-ratings by  country and app
+			-dev success by dl and rev
 ah
 	ah.db
+		db stats
+		aggregate stats
+			top deeplink by app and country and device
+			top nav page
+			top actions
+			top searches by app and country		
+			deeplink action trends
 	nac_common_model.db
 		db stats
 		aggregate stats
-		
+			top deeplink by app and country and device
+			top nav page
+			top actions
+			top searches by app and country
+			
 	comparison stats?
 		ah vs nac2 deeplinks
 		ah vs nac2 events		

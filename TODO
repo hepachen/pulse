@@ -1,0 +1,22 @@
+
+
+view
+msft
+	msft.db 
+		db stats
+		aggregate stats
+	msftext.db 
+		db stats
+		aggregate stats
+ah
+	ah.db
+	nac_common_model.db
+		db stats
+		aggregate stats
+		
+	comparison stats?
+		ah vs nac2 deeplinks
+		ah vs nac2 events		
+export status
+	dxa dir stats
+	hive_dump stats

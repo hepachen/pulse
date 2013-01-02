@@ -3,26 +3,40 @@
 view
 msft
 	msft.db 
+		
 		db stats
+			msft_batch(filename,batch,"timestamps" )
+			msft_trans(total , batch,"timestamps" )
+			msft_offer(total , batch,"timestamps" )
+			msft_product(total , batch,"timestamps" )
+			msft_developer(country, total , batch,"timestamps" )
 		aggregate stats
-			-top downloads
+			msft_topdl_all(app, total , batch,"timestamps" )
+			msft_topdl_90(app, total , batch,"timestamps" )
+			msft_toprev_all(app, total , batch,"timestamps" )
+			msft_toprev_90(app, total , batch,"timestamps" )
 			-top revenue
 	msftext.db 
 		db stats
+			msftext_batch(filename,batch,"timestamps" )
 		aggregate stats
 			-ratings by  country and app
 			-dev success by dl and rev
 ah
 	ah.db
+		summary
 		db stats
-		aggregate stats
+			ah_master_events(partition,count,"timestamps" )
+		aggregate statsbody
 			top deeplink by app and country and device
 			top nav page
 			top actions
 			top searches by app and country		
 			deeplink action trends
 	nac_common_model.db
+		summary
 		db stats
+			nac_event(partition, total , batch,"timestamps" )
 		aggregate stats
 			top deeplink by app and country and device
 			top nav page
@@ -30,8 +44,10 @@ ah
 			top searches by app and country
 			
 	comparison stats?
+		summary
 		ah vs nac2 deeplinks
 		ah vs nac2 events		
 export status
+	summary
 	dxa dir stats
 	hive_dump stats

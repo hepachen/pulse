@@ -1,0 +1,106 @@
+appratings_dist
+bingsearchadvkpi
+bingsearchadvkpi_before06182012
+bingsrpv
+binguniqueuser
+developer
+marketplace_transactions
+msft_petl
+msft_stats_cnt
+offer
+product_result
+reverse_geo
+searchadvkpi
+sku_result
+--marketplace_appcatalog
+--marketplaceappcatalog
+
+
+
+____________________________________________________________________
+
+appratings
+	product_name	string	
+	product_id	string	
+	publisher_name	string	
+	rating	int	
+	rating_count	bigint	
+	app_country	string	
+
+
+
+ sku_result
+	sku_id	string	
+	product_id	string	
+	payload_id	string	
+	application_type	string	
+	version	string	
+	is_available	string	
+	availability_date_time	string	
+	is_published	string	
+	published_date_time	string	
+	sku_state	string	
+	default_locale_name	string	
+	runtime_name	string	
+	binary_installed_size	string	
+	binary_size	string	
+	created_date_time	string	
+	updated_date_time	string	
+	dt	string	
+
+
+
+product_result
+	product_id	string	
+	product_name	string	
+	programmatic_name	string	
+	publisher_id	string	
+	category_name	string	
+	sub_category	string	
+	published_date_time	string	
+	is_beta	string	
+	payload_type	string	
+	push_notification	string	
+	is_live	string	
+	trial_offer_enabled	string	
+	preinstalled	string	
+	pattern_name	string	
+	product_create_date_time	string	
+	dt	string	
+
+ offer
+	product_id	string	
+	product_offer_id	string	
+	price_in_usd	string	
+	offer_type_name	string	
+	country_code	string	
+	dt	string	
+
+
+
+marketplace_transactions
+	file_date	string	
+	transaction_date	string	
+	transaction_id	string	
+	transaction_type	string	
+	offer_id	string	
+	product_id	string	
+	payment_instrument_type	string	
+	license_type	string	
+	country_code	string	
+	oem	string	
+	device_model	string	
+	dt	string	
+
+
+
+developer
+	developer_account_id	string	
+	developer_account_type	string	
+	country_code	string	
+	dt	string
+
+_______________________________
+
+
+

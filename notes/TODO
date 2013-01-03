@@ -5,12 +5,12 @@ msft
 	msft.db 
 		
 		db stats
-			msft_batch(filename,batch,"timestamps" )
-			msft_trans(total , batch,"timestamps" )
+			msft_trans(total , batch_id,"timestamps" )
 			msft_offer(total , batch,"timestamps" )
 			msft_product(total , batch,"timestamps" )
 			msft_developer(country, total , batch,"timestamps" )
 		aggregate stats
+			msft_trans_country_device(total , country,device,batch_id,"timestamps" )
 			msft_topdl_all(app, total , batch,"timestamps" )
 			msft_topdl_90(app, total , batch,"timestamps" )
 			msft_toprev_all(app, total , batch,"timestamps" )

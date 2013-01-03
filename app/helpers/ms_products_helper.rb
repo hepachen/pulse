@@ -1,0 +1,2 @@
+module MsProductsHelper
+end

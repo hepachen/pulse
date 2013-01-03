@@ -1,0 +1,27 @@
+<h1>Listing ms_developers</h1>
+
+<table>
+  <tr>
+    <th>Country</th>
+    <th>Total</th>
+    <th>Batch</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @ms_developers.each do |ms_developer| %>
+  <tr>
+    <td><%= ms_developer.country %></td>
+    <td><%= ms_developer.total %></td>
+    <td><%= ms_developer.batch_id %></td>
+    <td><%= link_to 'Show', ms_developer %></td>
+    <td><%= link_to 'Edit', edit_ms_developer_path(ms_developer) %></td>
+    <td><%= link_to 'Destroy', ms_developer, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Ms developer', new_ms_developer_path %>

@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Total:</b>
+  <%= @ms_product.total %>
+</p>
+
+<p>
+  <b>Batch:</b>
+  <%= @ms_product.batch_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_ms_product_path(@ms_product) %> |
+<%= link_to 'Back', ms_products_path %>

@@ -1,0 +1,17 @@
+nac2_common_model:
+
+application
+application_device
+application_param
+device_model_lut
+device_operator
+event
+event_param
+ids
+mca_artistradio_devices
+mca_first_sessions
+nac2_sess_event_agg
+nac_service_lut
+session
+session_location
+session_operator

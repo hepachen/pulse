@@ -11,6 +11,42 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 0) do
+ActiveRecord::Schema.define(:version => 20130103042203) do
+
+  create_table "batches", :force => true do |t|
+    t.string   "fname",                    :null => false
+    t.string   "batch_type", :limit => 40, :null => false
+    t.datetime "created_at",               :null => false
+    t.datetime "updated_at",               :null => false
+  end
+
+  create_table "ms_developers", :force => true do |t|
+    t.string   "country"
+    t.integer  "total"
+    t.integer  "batch_id",   :null => false
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "ms_offers", :force => true do |t|
+    t.integer  "total"
+    t.integer  "batch_id",   :null => false
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "ms_products", :force => true do |t|
+    t.integer  "total"
+    t.integer  "batch_id",   :null => false
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "ms_txns", :force => true do |t|
+    t.integer  "total"
+    t.integer  "batch_id",   :null => false
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
 
 end

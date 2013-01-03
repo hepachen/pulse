@@ -1,0 +1,38 @@
+appratings
+avg_rating_country
+avg_rating_country_ag
+avg_rating_product_ag
+country_threshold
+country_threshold_history
+dev_dl
+dev_rev
+dev_success_dl
+dev_success_dl_count
+dev_success_rev
+dev_success_rev_count
+developer
+nweek
+offer
+product_result
+top_dl
+
+
+
+
+____________________________________
+__________________________________________________
+dev_success_dl_count:
+country_code	string	
+dev_count	bigint	
+week	string
+
+
+
+
+__________________________________________________
+
+desc dev_success_rev_count:
+country_code	string	
+dev_count	bigint	
+week	string	
+

@@ -11,3 +11,148 @@
  *= require_self
  *= require_tree .
  */
+
+
+/*----------------------------------
+
+HTML Elements
+
+
+-------------------------------------*/
+
+
+
+body {
+	background: #6B6B6B;
+	font: 12px/170% 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	color: #6B6B6B; 
+	text-align: center;	
+}
+
+
+/* Paragraph */
+p { padding: 12px 10px 0px 40px;	}
+
+
+/*-----------------------------------
+			Layout
+-----------------------------------*/
+/* Navigation */
+#nav {
+	clear: both;	
+	padding: 0px;	margin: 0px;
+	width: 952px;
+	height: 50px;
+	background: #D2B48C url(nav.gif) no-repeat;
+	-moz-border-radius-topleft: 35px;
+	border-top-left-radius: 35px;
+	-moz-border-radius-topright: 35px;
+	border-top-right-radius: 35px;
+}
+#nav ul {
+	float: left;	
+	list-style: none;	
+	margin: 5px 0 0 0;
+	height: 45px;
+	padding: 0 0 0 40px;					
+}
+#nav ul li {
+	float: left;
+	margin: 0; padding: 0 0 0 10px;		
+}
+#nav ul li a {
+	float: left;
+	margin: 0;
+	padding: 0 15px 0 5px;
+	color: #FFF;
+	font: bold 15px/45px 'Trebuchet MS', 'Helvetica Neue', Arial, sans-serif;
+    text-decoration: none;
+   opacity: 0.5;
+   transition: opacity .25s ease-in-out;
+   -moz-transition: opacity .25s ease-in-out;
+   -webkit-transition: opacity .25s ease-in-out;
+}
+#nav ul li a:hover, 
+#nav ul li a:active {
+	color: #E7FAA9;	
+  	opacity : 1;
+}
+#nav ul li#current {	
+}
+#nav ul li#current a {	
+	color: #4B3D2C;
+}
+
+
+
+
+/* Content Container */
+.container {
+	position: relative;
+	width: 952px;
+	height: 500px;
+	
+	background: #FFF url(wrap.gif )  repeat-y center top;
+	margin: 40px auto 30px auto;
+	text-align: left;	
+	-moz-border-radius-topleft: 35px;
+	border-top-left-radius: 35px;
+	-moz-border-radius-topright: 35px;
+	border-top-right-radius: 35px;
+
+}
+
+
+#content {
+  opacity : 1;
+  transition-property : opacity; 
+  transition-duration : 3.0s; 
+}
+/* Sidebar*/
+
+
+/*
+#sidebar {
+	float: right;
+	width: 185px;
+	padding: 0px; 
+	margin: 0 45px 0 0;
+	display: inline;	
+}
+#sidebar h3 {
+	color: #51432F; 
+	font: bold 1.2em 'Trebuchet MS', 'Helvetica Neue', Arial, Sans-serif;
+	text-transform: none;
+	letter-spacing: -0.5px;
+	padding: 5px 0 0px 7px; 
+	margin: 10px 0 0px 10px; 	
+	border-bottom: 1px solid #E4F2C8;	
+}
+
+#sidebar ul{
+    text-decoration: none;
+	list-style: none;
+}
+
+#sidebar ul li a {
+	color: black;
+	font: bold 15px/45px 'Trebuchet MS', 'Helvetica Neue', Arial, sans-serif;
+    text-decoration: none;
+list-style: none;
+   opacity: 0.5;
+   transition: opacity .25s ease-in-out;
+   -moz-transition: opacity .25s ease-in-out;
+   -webkit-transition: opacity .25s ease-in-out;
+}
+#sidebar ul li a:hover, 
+#sidebar ul li a:active {
+	color: gray;	
+  opacity : 1;
+}
+#sidebar ul li#current {	
+}
+#sidebar ul li#current a {	
+	color: #4B3D2C;
+}
+
+*/

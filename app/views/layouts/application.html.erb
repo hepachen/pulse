@@ -8,23 +8,21 @@
 </head>
 <body>
 	
-<div class="canvas">	
+<div class="wrapper">	
 <div class="container"> <!--container start-->
 	<section id="nav">
 		<ul>
-			<li id="current"><a href="index.html">  Home</a> </li>
-			<li> <a href="ah.html"> App Highlights</a></li>
-			<li> <a href="msft.html"> Microsoft</a></li>
-			<li> <a href="exports.html"> Data Exports</a></li>
+			<li ><a href="/">  Home</a> </li>
+			<li> <a href="/ah"> App Highlights</a></li>
+			<li> <a href="/msft"> Microsoft</a></li>
+			<li> <a href="/dx"> Data Exports</a></li>
 
 
 		</ul>
 	</section>
 
-	<section id="content">	 <!--content begins-->
-		<p>
-		Welcome to the pulse server where we can monitor the health of data intake systems from DataOS.Welcome to the pulse server where we can monitor the health of data intake systems from DataOS.Welcome to the pulse server where we can monitor the health of data intake systems from DataOS.Welcome to the pulse server where we can monitor the health of data intake systems from DataOS.
-		</p>
+	<section class="content">	 <!--content begins-->
+		
 		<%= yield %>
 	</section>
 </div>  <!--container end-->

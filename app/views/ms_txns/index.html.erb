@@ -13,13 +13,6 @@
   <tr>
     <td><%= ms_txn.total %></td>
     <td><%= ms_txn.batch_id %></td>
-    <td><%= link_to 'Show', ms_txn %></td>
-    <td><%= link_to 'Edit', edit_ms_txn_path(ms_txn) %></td>
-    <td><%= link_to 'Destroy', ms_txn, method: :delete, data: { confirm: 'Are you sure?' } %></td>
   </tr>
 <% end %>
 </table>
-
-<br />
-
-<%= link_to 'New Ms txn', new_ms_txn_path %>

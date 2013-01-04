@@ -13,13 +13,7 @@
   <tr>
     <td><%= ms_product.total %></td>
     <td><%= ms_product.batch_id %></td>
-    <td><%= link_to 'Show', ms_product %></td>
-    <td><%= link_to 'Edit', edit_ms_product_path(ms_product) %></td>
-    <td><%= link_to 'Destroy', ms_product, method: :delete, data: { confirm: 'Are you sure?' } %></td>
   </tr>
 <% end %>
 </table>
 
-<br />
-
-<%= link_to 'New Ms product', new_ms_product_path %>

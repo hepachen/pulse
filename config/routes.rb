@@ -1,21 +1,18 @@
 Pulse::Application.routes.draw do
-  get "home/index"
-  root :to => 'home#index'
- #  resources :ms_developers
- #  resources :ms_products
- #  resources :ms_offers
- #  resources :batches
- #  resources :ms_txns
-  get "ms_developers/index"
-  get "ms_products/index"
-  get "ms_offers/index"
-  get "batches/index"
-  get "ms_txns/index"
- # match :ms_products => "ms_products#index"
- # match :ms_offers => "ms_offers#index"
- # match :batches => "batches#index"
- # match :ms_txns => "ms_txns#index"
+  
 
+
+  root :to => 'home#index'
+  get "batches/index"
+  get "msft/" =>"msft#index"
+  get "dx"=> "dx#index"
+  get "ah"=>"ah#index"
+ 
+ match 'msft/developers' => 'ms_developers#index'
+ match 'msft/products' => 'ms_products#index'
+ match 'msft/offers' => 'ms_offers#index'
+ match 'msft/txns' => 'ms_txns#index'
+ 
 
 
   # The priority is based upon order of creation:

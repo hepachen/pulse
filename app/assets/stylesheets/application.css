@@ -110,10 +110,9 @@ p { padding: 12px 10px 0px 40px;	}
 
 
 .content h1 {
-	margin: 30px auto auto 40px ;
+	margin: 20px auto auto 40px ;
 }
 .content {
-	//background :green;
   margin: 0px 30px 30px auto;	
   opacity : 1;
   transition-property : opacity; 
@@ -122,18 +121,21 @@ p { padding: 12px 10px 0px 40px;	}
 /* Sidebar*/
 
 
+#info-display{
+	float: left;
+	width: 70%;
+	height: 100%;
+}
 
 #sidebar {
-//	background:  red;
 	float: right;
-	width: 185px;
-	height: 100px;
-	padding: 0px; 
+	width: 20%;
+	height: 100%;
 	display: inline;	
 }
-/*
+
 #sidebar h3 {
-	color: #51432F; 
+	color: #66CCCC; 
 	font: bold 1.2em 'Trebuchet MS', 'Helvetica Neue', Arial, Sans-serif;
 	text-transform: none;
 	letter-spacing: -0.5px;
@@ -159,7 +161,7 @@ list-style: none;
 }
 #sidebar ul li a:hover, 
 #sidebar ul li a:active {
-	color: gray;	
+  color: gray;	
   opacity : 1;
 }
 #sidebar ul li#current {	
@@ -169,4 +171,3 @@ list-style: none;
 }
 
 
-*/

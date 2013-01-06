@@ -1,3 +1,11 @@
 // Place all the styles related to the home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+#slash_img{
+  margin: 130px;
+  -moz-box-shadow: 5px 5px 7px #888;
+  -moz-border-radius-bottomright: 15px;
+  -webkit-box-shadow: 5px 5px 7px #888;
+  -webkit-border-bottom-right-radius: 15px;
+}

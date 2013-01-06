@@ -1,34 +1,20 @@
-
 <section id="info-display">
-<h1>Microsoft</h1>	
+	<h1>Microsoft</h1>
 	<comment>
-		<p>All  Microsft related analytics health can be found here.All  Microsft related analytics health can be found here.
-		All  Microsft related analytics health can be found here.All  Microsft related analytics health can be found here.
-		All  Microsft related analytics health can be found here.All  Microsft related analytics health can be found here.
-	
-		</p>	
+		<p>
+			All  Microsft related analytics health can be found here.All  Microsft related analytics health can be found here.
+			All  Microsft related analytics health can be found here.All  Microsft related analytics health can be found here.
+			All  Microsft related analytics health can be found here.All  Microsft related analytics health can be found here.
+
+		</p>
 	</comment>
 
 	<figure>
-			<%=image_tag("msft/hands.jpg",:class=>"image_box",:size => "600x500") %>
-		
+		<%= image_tag("msft/hands.jpg",:class=>"image_box",:size => "600x500") %>
 
 	</figure>
 	<figcaption>
-		
-	</figcaption>	
-	
-	
-	
+
+	</figcaption>
 </section>
-<section id="sidebar"><!--sidebar begins-->
-	<ul>
-		<li><a href="/msft/offers">Offers</a></li>
-		<li><a href="/msft/developers">Developers</a></li>
-		<li><a href="/msft/products">Products</a></li>
-		<li><a href="/msft/txns">Transactions</a></li>
-		
-	</ul>
-</section><!--sidebar ends-->
-
-
+<%= render :template => 'layouts/msft_sidebar' %>
